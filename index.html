@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanil Kanchana | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/profile.jpg" alt="Kanil Profile" class="profile-pic">
+
+    <h1>Kanil Kanchana <span>Prabashwara</span></h1>
+    <p class="subtitle">Diploma Student | Web Application Development</p>
+
+    <p class="intro">
+      Diploma student in Computer Science with Artificial Intelligence at NIBM.
+      Passionate about building modern, clean, and interactive web applications.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section glass">
+  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+  <p>
+    <strong>Diploma in Computer Science with Artificial Intelligence</strong><br>
+    National Institute of Business Management (NIBM)<br>
+    <span class="year">2024 – Present</span>
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section glass">
+  <h2><i class="fas fa-code"></i> Technical Skills</h2>
+
+  <div class="skill">
+    <span>HTML</span>
+    <div class="progress"><div data-width="88%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>CSS</span>
+    <div class="progress"><div data-width="82%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>JavaScript</span>
+    <div class="progress"><div data-width="76%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>Python</span>
+    <div class="progress"><div data-width="70%"></div></div>
+  </div>
+
+  <div class="skill">
+    <span>SQL</span>
+    <div class="progress"><div data-width="68%"></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section glass">
+  <h2><i class="fas fa-layer-group"></i> Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card" onclick="openProject(1)">
+      <img src="images/project1.jpg" alt="Project 1">
+      <h3>Task Management Web App</h3>
+      <p>Web-based task tracking system.</p>
+    </div>
+
+    <div class="project-card" onclick="openProject(2)">
+      <img src="images/project2.jpg" alt="Project 2">
+      <h3>Data Visualization Dashboard</h3>
+      <p>Interactive charts & reports.</p>
+    </div>
+
+    <div class="project-card" onclick="openProject(3)">
+      <img src="images/project3.jpg" alt="Project 3">
+      <h3>JavaScript Utility Tools</h3>
+      <p>DOM-based JS mini tools.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeProject()">×</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="section glass">
+  <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> kanilkanchana98@gmail.com</p>
+    <p><i class="fas fa-phone"></i> 0762988952</p>
+    <p><i class="fab fa-instagram"></i> @kanil97k</p>
+  </div>
+
+  <form id="contactForm" class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p id="msg"></p>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
