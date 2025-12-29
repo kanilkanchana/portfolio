@@ -11,8 +11,8 @@ function openProject(id) {
   const desc = document.getElementById("modalDesc");
 
   if (id === 1) {
-    title.textContent = "Task Management Web App";
-    desc.textContent = "A web-based application to manage and track daily tasks using JavaScript.";
+    title.textContent = "Unit Converter Web Application";
+    desc.textContent = "Unit Converter is a simple and user-friendly web application designed to quickly convert values between different measurement units. The application focuses on clarity, speed, and ease of use, making it suitable for students, developers, and everyday users.";
   }
 
   if (id === 2) {
@@ -48,3 +48,4 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   msg.style.color = "#00ffa6";
   this.reset();
 });
+
